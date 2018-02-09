@@ -23,9 +23,46 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Bonnie Story
         </Link>
       </h1>
+      <ul
+        style={{
+          float: 'right',
+          display: 'flex'
+        }}
+      >
+        <li
+          style={{
+            marginLeft: '30px'
+          }}
+        >
+          <Link
+            to="/"
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+          Home
+          </Link>
+        </li>
+        <li
+          style={{
+            marginLeft: '30px'
+          }}
+        >
+          <Link
+            to="/page-2/"
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+          Page 2
+          </Link>
+        </li>
+      </ul>
     </div>
   </div>
 )

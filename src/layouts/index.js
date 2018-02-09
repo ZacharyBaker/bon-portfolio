@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import './index.css'
+
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Bonnie Story Official Site"
       meta={[
-        { name: 'description', content: 'Sample' },
+        { name: 'description', content: 'Sample' }, //TODO: SEO
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
