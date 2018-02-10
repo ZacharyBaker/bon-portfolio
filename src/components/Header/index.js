@@ -1,70 +1,55 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import s from './header.module.css'
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Bonnie Story
-        </Link>
-      </h1>
-      <ul
-        style={{
-          float: 'right',
-          display: 'flex'
-        }}
-      >
-        <li
-          style={{
-            marginLeft: '30px'
-          }}
-        >
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-          Home
-          </Link>
-        </li>
-        <li
-          style={{
-            marginLeft: '30px'
-          }}
-        >
-          <Link
-            to="/page-2/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-          Page 2
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-)
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      navItems: [
+        {
+          name: 'Home',
+          slug: '/'
+        },
+        {
+          name: 'Page 2',
+          slug: '/page-2/'
+        }
+      ]
+    }
+  }
+
+  render() {
+    let activePage = null;
+    if (typeof window !== 'undefined') {
+      activePage = window.location.pathname;
+    }
+
+    return (
+      <div className={s.wrap}>
+        <div className={s.inner}>
+          <h1 className={s.title}>
+            <Link to="/" className={s.link}>
+              Bonnie Story
+            </Link>
+          </h1>
+
+          <ul className={s.nav}>
+            {this.state.navItems.map(item => {
+              return (
+                <li className={s.li} key={item.slug}>
+                  <Link to={item.slug} className={`${s.link} ${activePage === item.slug ? s.activeItem : ''}`}>
+                    {item.name}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default Header
