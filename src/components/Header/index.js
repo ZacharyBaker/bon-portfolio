@@ -31,7 +31,7 @@ class Header extends React.Component {
         <div className={s.inner}>
           <h1 className={s.title}>
             <Link to="/" className={s.link}>
-              Bonnie Story
+              bonnie story
             </Link>
           </h1>
 

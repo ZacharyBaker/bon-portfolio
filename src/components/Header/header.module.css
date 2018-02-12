@@ -1,5 +1,5 @@
 .wrap {
-  background: rebeccapurple;
+  background: #fff;
   margin-bottom: 1.45rem;
 }
 
@@ -12,14 +12,15 @@
   align-items: flex-end;
 }
 
+.link {
+  color: hsla(0,0%,0%,0.5);
+  text-decoration: none;
+}
+
 .title {
   margin: 0;
 }
 
-.link {
-  color: #fff;
-  text-decoration: none;
-}
 .activeItem {
   border-bottom: 2px solid #fff;
 }

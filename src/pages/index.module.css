@@ -1,0 +1,69 @@
+.middleTitle {
+  text-align: center;
+  margin: 50px auto 130px;
+  font-size: 10rem;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workChild {
+  flex-basis: 45%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 400ms ease-in-out;
+  background-image: url(../assets/sailBoatBg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.workChild:hover {
+  transform: scaleX(.95) scaleY(.95);
+}
+.workChild:hover .sectionTitle {
+  transform: translateX(0px) translateY(0%) translateZ(0px);
+}
+
+.section {
+  overflow: hidden;
+}
+
+
+.sectionTitle {
+  transform: translateX(0px) translateY(200%) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 400ms;
+  margin: 1.3rem auto;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media (min-width: 1200px) {
+  .workChild {
+    flex-basis: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
