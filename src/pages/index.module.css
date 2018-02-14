@@ -17,14 +17,29 @@
   justify-content: center;
   align-items: center;
   transition: transform 400ms ease-in-out;
-  background-image: url(../assets/sailBoatBg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  /*transform-style: preserve-3d;*/
+  /*background: pink;*/
+  will-change: transform;
+}
+
+.bio {
+  background-image: url(../assets/ocean.jpeg);
+}
+.tv {
+  background-image: url(../assets/tracks.jpg);
+}
+.stage {
+  background-image: url(../assets/roofFeet.jpeg);
+}
+.teach {
+  background-image: url(../assets/fallLeaves.jpeg);
 }
 
 .workChild:hover {
-  transform: scaleX(.95) scaleY(.95);
+  transform: scaleX(.95) scaleY(.95) translateX(0px) translateY(0px) translateZ(0px)
 }
 .workChild:hover .sectionTitle {
   transform: translateX(0px) translateY(0%) translateZ(0px);

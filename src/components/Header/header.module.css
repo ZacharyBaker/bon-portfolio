@@ -22,11 +22,11 @@
 }
 
 .activeItem {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid hsla(0,0%,0%,0.5);
 }
 
 .link:active, .link:hover {
-  color: #fff;
+  color: hsla(0,0%,0%,0.5);
 }
 
 .nav {
