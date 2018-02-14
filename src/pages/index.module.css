@@ -11,42 +11,53 @@
 }
 
 .workChild {
+  position: relative;
   flex-basis: 45%;
   min-height: 400px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 400ms ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  /*transform-style: preserve-3d;*/
-  /*background: pink;*/
+  transition: all 400ms ease-in-out;
   will-change: transform;
+  overflow: hidden;
+  background: transparent;
 }
 
-.bio {
-  background-image: url(../assets/ocean.jpeg);
-}
-.tv {
-  background-image: url(../assets/tracks.jpg);
-}
-.stage {
-  background-image: url(../assets/roofFeet.jpeg);
-}
-.teach {
-  background-image: url(../assets/fallLeaves.jpeg);
+.workChild img {
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+    transform-style: preserve-3d;
+    transition: transform 400ms, opacity 400ms;
+    opacity: 1;
+    margin: 0;
+    max-width: none;
+    width: auto;
+    height: 100%;
 }
 
 .workChild:hover {
-  transform: scaleX(.95) scaleY(.95) translateX(0px) translateY(0px) translateZ(0px)
+  transform: scaleX(.95) scaleY(.95) translateX(0px) translateY(0px) translateZ(0px);
+  background: pink;
 }
 .workChild:hover .sectionTitle {
   transform: translateX(0px) translateY(0%) translateZ(0px);
 }
+.workChild:hover img {
+    transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+    opacity: .5;
+}
 
 .section {
-  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 
