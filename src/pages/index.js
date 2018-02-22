@@ -5,6 +5,7 @@ import ocean from '../assets/ocean.jpeg'
 import track from '../assets/tracks.jpg'
 import fallLeaves from '../assets/fallLeaves.jpeg'
 import roofFeet from '../assets/roofFeet.jpeg'
+import Youtube from '../components/Youtube'
 
 const IndexPage = () => (
   <div>
@@ -51,6 +52,10 @@ const IndexPage = () => (
           </div>
           <img src={fallLeaves} alt=""/>
         </Link>
+
+        <Youtube 
+          ytid="CDjJguqhFzc"
+        />
 
     </div>
 

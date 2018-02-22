@@ -31,3 +31,4 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
