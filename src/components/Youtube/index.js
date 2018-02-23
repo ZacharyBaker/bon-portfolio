@@ -13,7 +13,7 @@ class Youtube extends React.Component {
   createIframe(e) {
     const url = e.target.dataset.youtubeButton;
     let youtubePlaceholder = e.target.parentNode;
-    var htmlString = `<div className={s.video__youtube}> <iframe class={s.video__iframe} src="${url}?autoplay=1" frameborder="0" allowfullscreen></iframe></div>`;
+    var htmlString = `<div class="${s.video__youtube}"> <iframe class="${s.video__iframe}" src="${url}?autoplay=1" frameborder="0" allowfullscreen></iframe></div>`;
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
