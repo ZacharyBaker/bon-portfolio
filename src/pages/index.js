@@ -9,7 +9,8 @@ import Youtube from '../components/Youtube'
 
 const IndexPage = () => (
   <div>
-    <h1 className={s.middleTitle}>story.</h1>
+    <h1 className={s.middleTitle}>story</h1>
+    <h6 className={s.subTitle}>I love what I do.</h6>
 
     <div className={s.work}>
 
