@@ -14,6 +14,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: #F2F2F2;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .workChild {
@@ -43,7 +46,7 @@
 
 .workChild:hover {
   transform: scaleX(.95) scaleY(.95) translateX(0px) translateY(0px) translateZ(0px);
-  background: pink;
+  background: gray;
 }
 .workChild:hover .sectionTitle {
   transform: translateX(0px) translateY(0%) translateZ(0px);
