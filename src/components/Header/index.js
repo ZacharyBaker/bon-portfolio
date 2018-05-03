@@ -13,8 +13,8 @@ class Header extends React.Component {
           slug: '/'
         },
         {
-          name: 'Page 2',
-          slug: '/page-2/'
+          name: 'Contact',
+          slug: '/contact/'
         }
       ]
     }

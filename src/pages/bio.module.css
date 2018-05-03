@@ -1,45 +1,17 @@
 .bioPageWrap {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-/*.paragraphWrap {
-  max-width: 70%;
-  margin-left: auto;
-  background: #434344;
-  color: white;
-  padding: 20px;
-  padding-top: 300px;
-  font-family: 'Montserrat';
-}*/
 
 p {
   font-family: 'Montserrat';
-  background: #434344;
-  color: white;
-  margin-bottom: 0;
 }
 
 .p1 {
-  width: 40%;
-  flex-grow: 1;
+
 }
 
 .bioHeader {
-  color: white;
   font-size: 60px;
-  font-weight: bold;
-  max-width: 350px;
-  position: absolute;
-  right: 17%;
-  background: #434344;
-}
-
-.imgWrap {
-  max-width: 40%;
-}
-
-.headerImage {
-  width: 100%;
+  margin-bottom: 40px;
 }

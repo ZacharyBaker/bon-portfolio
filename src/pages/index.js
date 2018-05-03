@@ -54,10 +54,6 @@ const IndexPage = () => (
           <img src={fallLeaves} alt=""/>
         </Link>
 
-        <Youtube 
-          ytid="CDjJguqhFzc"
-        />
-
     </div>
 
   </div>
